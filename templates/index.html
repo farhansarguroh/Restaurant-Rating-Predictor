@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Restaurant Rating Predictor</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='templates\styles.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h1 class="mt-5 text-center">Restaurant Rating Predictor</h1>
+          <form action="/predict" method="post">
+            <div class="form-group">
+              <label for="online_order">Accepts Online Orders (1 for Yes, 0 for No):</label>
+              <input type="text" class="form-control" id="online_order" name="online_order" required>
+            </div>
+            <div class="form-group">
+              <label for="book_table">Can Book Tables (1 for Yes, 0 for No):</label>
+              <input type="text" class="form-control" id="book_table" name="book_table" required>
+            </div>
+            <div class="form-group">
+              <label for="votes">Number of Votes:</label>
+              <input type="text" class="form-control" id="votes" name="votes" required>
+            </div>
+            <div class="form-group">
+              <label for="rest_type">Restaurant Types (comma separated if multiple):</label>
+              <input type="text" class="form-control" id="rest_type" name="rest_type" required>
+            </div>
+            <div class="form-group">
+              <label for="cuisines">Cuisines (comma separated if multiple):</label>
+              <input type="text" class="form-control" id="cuisines" name="cuisines" required>
+            </div>
+            <div class="form-group">
+              <label for="cost">Average Cost for Two People:</label>
+              <input type="text" class="form-control" id="cost" name="cost" required>
+            </div>
+            <div class="form-group">
+              <label for="type">Restaurant Type (Buffet, Casual Dining, etc.):</label>
+              <input type="text" class="form-control" id="type" name="type" required>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Predict Rating</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

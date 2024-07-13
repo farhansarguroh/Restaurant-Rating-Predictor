@@ -1,0 +1,31 @@
+body {
+    background: url('https://i0.wp.com/lh3.googleusercontent.com/-mzr8kWMbyPk/YeWojlJ6U3I/AAAAAAAA_Zc/-6RiYe2dOWU-ISh9hILYvHApulkm50adwCNcBGAsYHQ/s16000/image.png?ssl=1') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+h1, label {
+    color: white;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
